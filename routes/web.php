@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('transport', 'TransportController')->middleware('auth');
 Route::resource('package', 'PackageController')->middleware('auth');
+
+Route::get('shop', 'ShopController@index')->name('shop.index');
