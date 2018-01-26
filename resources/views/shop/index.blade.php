@@ -26,6 +26,7 @@
                                 <a href="{{ route('shop.item', ['id' => $transport->id]) }}">
                                     @foreach($transport->images as $image)
                                         <img src="{{ asset($image->path.'/'.$image->filename) }}" alt="" class="img-responsive image1">
+                                        @break
                                     @endforeach
                                 </a>
                             </div>

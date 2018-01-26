@@ -19,7 +19,10 @@
             <div class="row" id="productMain">
                 <div class="col-sm-6">
                     <div id="mainImage">
-                        <img src="img/detailbig1.jpg" alt="" class="img-responsive">
+                        @foreach($transport->images as $image)
+                            <img src="{{ asset($image->path.'/'.$image->filename) }}" alt="" class="img-responsive">
+                            @break
+                        @endforeach
                     </div>
 
                     <div class="ribbon sale">
@@ -70,21 +73,13 @@
                     </div>
 
                     <div class="row" id="thumbs">
-                        <div class="col-xs-4">
-                            <a href="img/detailbig1.jpg" class="thumb">
-                                <img src="img/detailsquare.jpg" alt="" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-xs-4">
-                            <a href="img/detailbig2.jpg" class="thumb">
-                                <img src="img/detailsquare2.jpg" alt="" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-xs-4">
-                            <a href="img/detailbig3.jpg" class="thumb">
-                                <img src="img/detailsquare3.jpg" alt="" class="img-responsive">
-                            </a>
-                        </div>
+                        @foreach($transport->images as $image)
+                            <div class="col-xs-4">
+                                <a href="{{ asset($image->path.'/'.$image->filename) }}" class="thumb">
+                                    <img src="{{ asset($image->path.'/'.$image->filename) }}" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
 
