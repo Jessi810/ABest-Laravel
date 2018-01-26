@@ -20,6 +20,7 @@ class CreateImagesTable extends Migration
             $table->foreign('transport_id')->references('id')->on('transports')->onDelete('cascade');
 
             $table->string('filename');
+            $table->string('path');
             $table->timestamps();
         });
     }

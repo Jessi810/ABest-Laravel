@@ -10,10 +10,11 @@ class Image extends Model
 {
     protected $fillable = [
         'transport_id',
-        'filename'
+        'filename',
+        'path'
     ];
 
-    public function transports()
+    public function transport()
     {
         return $this->belongsTo(Transport::class);
     }
