@@ -8,6 +8,11 @@ use App\Transport;
 
 class Image extends Model
 {
+    protected $fillable = [
+        'transport_id',
+        'filename'
+    ];
+
     public function transports()
     {
         return $this->belongsTo(Transport::class);
