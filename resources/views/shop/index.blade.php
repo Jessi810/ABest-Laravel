@@ -19,26 +19,30 @@
 
             <div class="row products">
 
-                <div class="col-md-3 col-sm-4">
-                    <div class="product">
-                        <div class="image">
-                            <a href="shop-detail.html">
-                                <img src="img/product1.jpg" alt="" class="img-responsive image1">
-                            </a>
+                @foreach($transports as $transport)
+                    <div class="col-md-3 col-sm-4">
+                        <div class="product">
+                            <div class="image">
+                                <a href="{{ route('shop.item', ['id' => $transport->id]) }}">
+                                    <img src="img/product1.jpg" alt="" class="img-responsive image1">
+                                </a>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="{{ route('shop.item', ['id' => $transport->id]) }}">{{ $transport->name }}</a></h3>
+                                <p class="price">
+                                    CA$ {{ $transport->packages->min('price_1') }}
+                                </p>
+                                <p class="buttons">
+                                    <a href="{{ route('shop.item', ['id' => $transport->id]) }}" class="btn btn-default">View detail</a>
+                                    <a href="shop-basket.html" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </p>
+                            </div>
+                            <!-- /.text -->
                         </div>
-                        <!-- /.image -->
-                        <div class="text">
-                            <h3><a href="shop-detail.html">Fur coat with very but very very long name</a></h3>
-                            <p class="price">$143.00</p>
-                            <p class="buttons">
-                                <a href="shop-detail.html" class="btn btn-default">View detail</a>
-                                <a href="shop-basket.html" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </p>
-                        </div>
-                        <!-- /.text -->
+                        <!-- /.product -->
                     </div>
-                    <!-- /.product -->
-                </div>
+                @endforeach
 
             </div>
             <!-- /.products -->
