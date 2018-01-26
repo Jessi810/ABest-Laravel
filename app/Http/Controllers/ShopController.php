@@ -10,8 +10,8 @@ class ShopController extends Controller
 {
     public function index()
     {
-        $transports = Transport::with('packages')->get();
-
+        $transports = Transport::with('packages', 'images')->get();
+        
         return view('shop.index', compact([
             'transports'
         ]));

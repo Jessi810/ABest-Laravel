@@ -24,7 +24,9 @@
                         <div class="product">
                             <div class="image">
                                 <a href="{{ route('shop.item', ['id' => $transport->id]) }}">
-                                    <img src="img/product1.jpg" alt="" class="img-responsive image1">
+                                    @foreach($transport->images as $image)
+                                        <img src="{{ asset($image->path.'/'.$image->filename) }}" alt="" class="img-responsive image1">
+                                    @endforeach
                                 </a>
                             </div>
                             <!-- /.image -->
