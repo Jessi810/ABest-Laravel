@@ -19,7 +19,6 @@ class CreateTransportsTable extends Migration
             $table->string('name');
             $table->string('source');
             $table->string('destination');
-            $table->boolean('extra_hour')->default(false);
             $table->timestamps();
         });
     }
