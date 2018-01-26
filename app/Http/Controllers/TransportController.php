@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\Transport;
 use Illuminate\Http\Request;
 
+use App\Http\Requests\TransportRequest;
+
+use App\Image;
+use App\Package;
+
 class TransportController extends Controller
 {
     /**
@@ -24,7 +29,7 @@ class TransportController extends Controller
      */
     public function create()
     {
-        //
+        return view('transport.create');
     }
 
     /**
@@ -33,9 +38,35 @@ class TransportController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(TransportRequest $request)
     {
-        //
+        $transport = Transport::create($request->all());
+
+        if ($request->has('images'))
+        {
+            foreach ($request->images as $image)
+            {
+                $filename = $image->store('transport/'.$transport->id);
+                Image::create([
+                    'transport_id' => $transport->id,
+                    'filename' => $filename
+                ]);
+            }
+        }
+
+        $package = new Package();
+        $package->size = $request->size[0];
+        $package->price_1 = $request->price_1[0];
+        $package->price_2 = $request->price_2[0];
+        $package->transport()->associate($transport)->save();
+
+        $package = new Package();
+        $package->size = $request->size[1];
+        $package->price_1 = $request->price_1[1];
+        $package->price_2 = $request->price_2[1];
+        $package->transport()->associate($transport)->save();
+
+        return 'Upload successful!';
     }
 
     /**
