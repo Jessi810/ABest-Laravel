@@ -14,19 +14,28 @@ class ImageTableSeeder extends Seeder
      */
     public function run()
     {
-        $image = new Image();
-        $image->filename = 'seed.jpg';
-        $image->path = 'img/transport/seed';
-        $image->transport()->associate(Transport::find(1))->save();
+        for($i = 1; $i < 4; $i++)
+        {
+            $image = new Image();
+            $image->filename = 'drumheller'.$i.'.jpg';
+            $image->path = 'img/transport/1';
+            $image->transport()->associate(Transport::find(1))->save();
+        }
 
-        $image = new Image();
-        $image->filename = 'seed.jpg';
-        $image->path = 'img/transport/seed';
-        $image->transport()->associate(Transport::find(2))->save();
+        for($i = 1; $i < 6; $i++)
+        {
+            $image = new Image();
+            $image->filename = 'banff'.$i.'.jpg';
+            $image->path = 'img/transport/3';
+            $image->transport()->associate(Transport::find(3))->save();
+        }
 
-        $image = new Image();
-        $image->filename = 'seed.jpg';
-        $image->path = 'img/transport/seed';
-        $image->transport()->associate(Transport::find(3))->save();
+        for($i = 1; $i < 6; $i++)
+        {
+            $image = new Image();
+            $image->filename = 'downtown'.$i.'.jpg';
+            $image->path = 'img/transport/2';
+            $image->transport()->associate(Transport::find(2))->save();
+        }
     }
 }
