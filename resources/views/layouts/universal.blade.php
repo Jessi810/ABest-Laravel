@@ -89,8 +89,8 @@
                             <div class="navbar-header">
 
                                 <a class="navbar-brand home" href="index.html">
-                                    <img src="img/logo.png" alt="Universal logo" class="hidden-xs hidden-sm">
-                                    <img src="img/logo-small.png" alt="Universal logo" class="visible-xs visible-sm"><span class="sr-only">Universal - go to homepage</span>
+                                    <img src="{{ asset('img/logo.png') }}" alt="Universal logo" class="hidden-xs hidden-sm">
+                                    <img src="{{ asset('img/logo-small.png') }}" alt="Universal logo" class="visible-xs visible-sm"><span class="sr-only">Universal - go to homepage</span>
                                 </a>
                                 <div class="navbar-buttons">
                                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -126,7 +126,7 @@
                                                 <div class="yamm-content">
                                                     <div class="row">
                                                         <div class="col-sm-6">
-                                                            <img src="img/template-easy-customize.png" class="img-responsive hidden-xs" alt="">
+                                                            <img src="{{ asset('img/template-easy-customize.png') }}" class="img-responsive hidden-xs" alt="">
                                                         </div>
                                                         <div class="col-sm-3">
                                                             <h5>Shortcodes</h5>
@@ -172,7 +172,7 @@
                                                 <div class="yamm-content">
                                                     <div class="row">
                                                         <div class="col-sm-6">
-                                                            <img src="img/template-homepage.png" class="img-responsive hidden-xs" alt="">
+                                                            <img src="{{ asset('img/template-homepage.png') }}" class="img-responsive hidden-xs" alt="">
                                                         </div>
                                                         <div class="col-sm-3">
                                                             <h5>Portfolio</h5>
@@ -480,7 +480,7 @@
                             <div class="item same-height-row clearfix">
                                 <div class="image same-height-always">
                                     <a href="#">
-                                        <img class="img-responsive" src="img/detailsquare.jpg" alt="">
+                                        <img class="img-responsive" src="{{ asset('img/detailsquare.jpg') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="name same-height-always">
@@ -491,7 +491,7 @@
                             <div class="item same-height-row clearfix">
                                 <div class="image same-height-always">
                                     <a href="#">
-                                        <img class="img-responsive" src="img/detailsquare.jpg" alt="">
+                                        <img class="img-responsive" src="{{ asset('img/detailsquare.jpg') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="name same-height-always">
@@ -502,7 +502,7 @@
                             <div class="item same-height-row clearfix">
                                 <div class="image same-height-always">
                                     <a href="#">
-                                        <img class="img-responsive" src="img/detailsquare.jpg" alt="">
+                                        <img class="img-responsive" src="{{ asset('img/detailsquare.jpg') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="name same-height-always">
@@ -545,32 +545,32 @@
                         <div class="photostream">
                             <div>
                                 <a href="#">
-                                    <img src="img/detailsquare.jpg" class="img-responsive" alt="#">
+                                    <img src="{{ asset('img/detailsquare.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
-                                    <img src="img/detailsquare2.jpg" class="img-responsive" alt="#">
+                                    <img src="{{ asset('img/detailsquare2.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
-                                    <img src="img/detailsquare3.jpg" class="img-responsive" alt="#">
+                                    <img src="{{ asset('img/detailsquare3.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
-                                    <img src="img/detailsquare3.jpg" class="img-responsive" alt="#">
+                                    <img src="{{ asset('img/detailsquare3.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
-                                    <img src="img/detailsquare2.jpg" class="img-responsive" alt="#">
+                                    <img src="{{ asset('img/detailsquare2.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
-                                    <img src="img/detailsquare.jpg" class="img-responsive" alt="#">
+                                    <img src="{{ asset('img/detailsquare.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                         </div>
