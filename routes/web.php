@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('transport', 'TransportController')->middleware('auth');
+Route::resource('package', 'PackageController')->middleware('auth');
