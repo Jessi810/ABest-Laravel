@@ -23,3 +23,4 @@ Route::resource('transport', 'TransportController')->middleware('auth');
 Route::resource('package', 'PackageController')->middleware('auth');
 
 Route::get('shop', 'ShopController@index')->name('shop.index');
+Route::get('item', 'ShopController@item')->name('shop.item');
