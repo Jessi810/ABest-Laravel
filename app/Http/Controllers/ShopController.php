@@ -16,4 +16,13 @@ class ShopController extends Controller
             'transports'
         ]));
     }
+
+    public function item($id)
+    {
+        $transport = Transport::with('packages', 'images')->find($id);
+
+        return view('shop.item', compact([
+            'transport'
+        ]));
+    }
 }
