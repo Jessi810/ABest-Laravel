@@ -46,10 +46,11 @@ class TransportController extends Controller
         {
             foreach ($request->images as $image)
             {
-                $filename = $image->store('transport/'.$transport->id);
+                $filename = $image->store('img/transport/'.$transport->id, 'transport');
                 Image::create([
                     'transport_id' => $transport->id,
-                    'filename' => $filename
+                    'filename' => str_replace('img/transport/'.$transport->id.'/', '', $filename),
+                    'path' => 'img/transport/'.$transport->id
                 ]);
             }
         }
