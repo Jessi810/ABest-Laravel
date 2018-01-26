@@ -14,9 +14,21 @@ class TransportTableSeeder extends Seeder
     public function run()
     {
         $transport = new Transport();
-        $transport->name = 'CALGARY INTERNATIONAL AIRPORT to DRUMHELLER';
-        $transport->source = 'CALGARY INTERNATIONAL AIRPORT';
-        $transport->destination = 'DRUMHELLER';
+        $transport->name = 'Calgary International Airport to Drumheller';
+        $transport->source = 'Calgary International Airport';
+        $transport->destination = 'Drumheller';
+        $transport->save();
+
+        $transport = new Transport();
+        $transport->name = 'Calgary International Airport to Downtown';
+        $transport->source = 'Calgary International Airport';
+        $transport->destination = 'Downtown';
+        $transport->save();
+
+        $transport = new Transport();
+        $transport->name = 'Calgary International Airport to Banff National Park';
+        $transport->source = 'Calgary International Airport';
+        $transport->destination = 'Banff National Park';
         $transport->save();
     }
 }
