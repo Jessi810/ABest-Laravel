@@ -10,4 +10,9 @@ class Transport extends Model
     {
         return $this->hasMany(Package::class);
     }
+
+    public function images()
+    {
+        return $this->hasMany(Image::class);
+    }
 }
