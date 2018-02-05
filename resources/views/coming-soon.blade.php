@@ -55,15 +55,16 @@
                     </div>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" style="margin-top: -120px; ">
+                    <img src="{{ asset('img/abestlogo.png') }}" style="max-width: 240px; max-height: 240px; " />
                     <h1>
                         ABest Invites You to Spring 2018!
                     </h1>
 
                     <p class="tagline">
-                        More texts here
+                        The BEST transport service coming soon to serve you!
                     </p>
-                    <a class="btn btn-full" href="#about">Buttons if needed</a>
+                    {{--  <a class="btn btn-full" href="#about">Buttons if needed</a>  --}}
                 </div>
             </div>
 
