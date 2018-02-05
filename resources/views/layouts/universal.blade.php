@@ -252,23 +252,23 @@
 
                         <h4>Contact</h4>
 
-                        <p><strong>Universal Ltd.</strong>
-                            <br>13/25 New Avenue
-                            <br>Newtown upon River
-                            <br>45Y 73J
-                            <br>England
+                        <p>
+                            <strong>ABest Transport and Tour Services Inc.</strong>
+                            <br>240 Skyview Ranch Rd NE
+                            <br>Calgary, AB T3N 0P4
+                            <br><strong>Contact No,</strong>
+                            <br>+1 587 500 0888
+                            <br><strong>Email</strong>
+                            <br>info@abesttransport.com
                             <br>
-                            <strong>Great Britain</strong>
                         </p>
 
-                        <a href="contact.html" class="btn btn-small btn-template-main">Go to contact page</a>
+                        <a href="contact" class="btn btn-small btn-template-main">Go to contact page</a>
 
                         <hr class="hidden-md hidden-lg hidden-sm">
 
                     </div>
                     <!-- /.col-md-3 -->
-
-
 
                     <div class="col-md-3 col-sm-6">
 
@@ -318,7 +318,7 @@
             <div id="copyright">
                 <div class="container">
                     <div class="col-md-12">
-                        <p class="pull-left">&copy; 2018. ABest Transport Service</p>
+                        <p class="pull-left">&copy; 2018 ABest Transport Service</p>
                         <p class="pull-right">Template by <a href="https://bootstrapious.com">Bootstrapious</a> & <a href="https://fity.cz">Fity.cz</a>
                             <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
                         </p>
