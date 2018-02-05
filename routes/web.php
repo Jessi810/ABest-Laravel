@@ -11,13 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@comingSoon')->name('home.soon');
 
 Route::resource('transport', 'TransportController')->middleware('auth');
 Route::resource('package', 'PackageController')->middleware('auth');
