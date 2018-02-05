@@ -25,16 +25,16 @@
                         @endforeach
                     </div>
 
-                    <div class="ribbon sale">
+                    {{--  <div class="ribbon sale">
                         <div class="theribbon">SALE</div>
                         <div class="ribbon-background"></div>
-                    </div>
+                    </div>  --}}
                     <!-- /.ribbon -->
 
-                    <div class="ribbon new">
+                    {{--  <div class="ribbon new">
                         <div class="theribbon">NEW</div>
                         <div class="ribbon-background"></div>
-                    </div>
+                    </div>  --}}
                     <!-- /.ribbon -->
 
                 </div>
@@ -42,7 +42,7 @@
                     <div class="box">
 
                         <form>
-                            <div class="sizes">
+                            {{--  <div class="sizes">
 
                                 <h3>Available sizes</h3>
 
@@ -59,14 +59,14 @@
                                     <input type="radio" id="size_l" name="size" value="l" class="size-input">
                                 </label>
 
-                            </div>
+                            </div>  --}}    
 
                             <p class="price">${{ $transport->packages->min('price_1') }} - ${{ $transport->packages->max('price_2') }}</p>
 
                             <p class="text-center">
-                                <button type="submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                                <button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart-o"></i>
-                                </button>
+                                <button type="submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> Book Now!</button>
+                                {{--  <button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart-o"></i>
+                                </button>  --}}
                             </p>
 
                         </form>
@@ -111,6 +111,7 @@
                             </tr>
                         </tbody>
                     </table>
+                </p>
             </div>
 
             <div class="box social" id="product-social">
