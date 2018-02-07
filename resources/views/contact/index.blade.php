@@ -10,6 +10,9 @@
 @endsection
 
 @section('script')
+<script>
+    $('#navbar-contact').addClass('active');
+</script>
 @endsection
 
 @section('content')

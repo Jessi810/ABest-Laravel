@@ -9,6 +9,9 @@
 @section('script')
     <!-- owl carousel -->
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script>
+        $('#navbar-home').addClass('active');
+    </script>
 @endsection
 
 @section('content')

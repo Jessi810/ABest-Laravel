@@ -10,6 +10,9 @@
 @endsection
 
 @section('script')
+<script>
+    $('#navbar-package').addClass('active');
+</script>
 @endsection
 
 @section('content')
