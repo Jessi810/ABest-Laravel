@@ -95,6 +95,68 @@
                 </div>
                 <!-- *** HOMEPAGE CAROUSEL END *** -->
             </section>
+
+            <section class="bar background-gray no-mb padding-big text-center-sm" style="margin-top: -40px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="text-uppercase">Welcome!</h2>
+                            {{--  <p class="lead mb-small">40+ prepared HTML templates</p>  --}}
+                            <p class="lead mb-small">
+                                Welcome to Calgary, Alberta! Experience the genuine hospitality and excellent customer service of our <strong>friendly and expert drivers and travel guides</strong> as you go around.
+                            </p>
+    
+                            {{--  <p><a href="#" class="btn btn-template-main">Read more</a>
+                            </p>  --}}
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="img/template-easy-customize.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="bar no-mb color-white padding-big text-center-sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img src="img/template-easy-code.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="text-uppercase">Services like no other</h2>
+                            <p class="lead mb-small">
+                                We offer <strong>customized transport services</strong> like no other. As travelers ourselves, we wish to offer an optimum travel experience without spending much for tours and transportation to guarantee a hassle-free Canada travel experience.
+                            </p>
+                            {{--  <p class="mb-small">
+                                
+                            </p>  --}}
+    
+                            {{--  <p><a href="#" class="btn btn-template-transparent-primary">Read more</a>
+                            </p>  --}}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bar background-gray no-mb padding-big text-center-sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="text-uppercase">Excellent Prices</h2>
+                            {{--  <p class="lead mb-small">40+ prepared HTML templates</p>  --}}
+                            <p class="lead mb-small">
+                                You are guaranteed with Uber transportation rates so there’s no need to worry about overpriced transportation fees. What’s more, you get the customized sightseeing opportunities and go to your chosen tourist destinations at your own pace with the help of our own drivers. <strong>“Our Travel, Your Choice.”</strong>
+                            </p>
+    
+                            {{--  <p><a href="#" class="btn btn-template-main">Browse Now!</a>
+                            </p>  --}}
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="img/template-easy-customize.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 @endsection
