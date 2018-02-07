@@ -15,9 +15,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@comingSoon')->name('home.soon');
-Route::get('contact', function() {
-    return view('contact/index');
-});
+Route::get('contact', 'ContactController@index')->name('contact.index');
+Route::post('contact', 'ContactController@message')->name('contact.message');
 
 Route::resource('transport', 'TransportController')->middleware('auth');
 Route::resource('package', 'PackageController')->middleware('auth');

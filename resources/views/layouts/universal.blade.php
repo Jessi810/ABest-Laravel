@@ -115,7 +115,7 @@
                                         <a href="#">Reservation</a>
                                     </li>
                                     <li class="">
-                                        <a href="#">Contact Us</a>
+                                        <a href="{{ route('contact.index') }}">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
