@@ -75,8 +75,8 @@
                     <div class="row" id="thumbs">
                         @foreach($transport->images as $image)
                             <div class="col-xs-4">
-                                <a href="{{ asset($image->path.'/'.$image->filename) }}" class="thumb">
-                                    <img src="{{ asset($image->path.'/'.$image->filename) }}" alt="" class="img-responsive">
+                                <a href="{{ asset($image->path.'/'.$image->filename) }}" class="thumb" style="width: auto; max-height: 120px; overflow: hidden;">
+                                    <img src="{{ asset($image->path.'/'.$image->filename) }}" alt="" class="img-responsive" style="width: 100%; height: 100%px;">
                                 </a>
                             </div>
                         @endforeach
@@ -93,20 +93,20 @@
                         <thead>
                             <th></th>
                             @foreach($transport->packages as $package)
-                                <th>{{ $package->size }}</th>
+                                <th>{{ $package->size }} maximum person</th>
                             @endforeach
                         </thead>
                         <tbody>
                             <tr>
                                 <th>1-way</th>
                                 @foreach($transport->packages as $package)
-                                    <td>{{ $package->price_1 }}</td>
+                                    <td>${{ $package->price_1 }}</td>
                                 @endforeach
                             </tr>
                             <tr>
                                 <th>2-way</th>
                                 @foreach($transport->packages as $package)
-                                    <td>{{ $package->price_2 }}</td>
+                                    <td>${{ $package->price_2 }}</td>
                                 @endforeach
                             </tr>
                         </tbody>
