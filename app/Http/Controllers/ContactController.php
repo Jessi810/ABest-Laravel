@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\ContactForm;
+use App\Http\Requests\ContactFormRequest;
 
 class ContactController extends Controller
 {
@@ -13,7 +14,7 @@ class ContactController extends Controller
         return view('contact.index');
     }
 
-    public function message(Request $request)
+    public function message(ContactFormRequest $request)
     {
         $contact = new ContactForm();
         $contact->firstname = $request->get('firstname');
