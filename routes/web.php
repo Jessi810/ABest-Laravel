@@ -24,3 +24,4 @@ Route::resource('package', 'PackageController')->middleware('auth');
 
 Route::get('shop', 'ShopController@index')->name('shop.index');
 Route::get('item/{id}', 'ShopController@item')->name('shop.item');
+Route::get('book/{id}', 'ShopController@book')->name('shop.book');

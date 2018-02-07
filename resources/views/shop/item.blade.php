@@ -64,7 +64,7 @@
                             <p class="price">${{ $transport->packages->min('price_1') }} - ${{ $transport->packages->max('price_2') }}</p>
 
                             <p class="text-center">
-                                <button type="submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> Book Now!</button>
+                                <a href="{{ route('shop.book', ['id' => $transport->id]) }}" type="submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> Book Now!</a>
                                 {{--  <button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart-o"></i>
                                 </button>  --}}
                             </p>
