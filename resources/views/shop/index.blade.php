@@ -2,7 +2,7 @@
     'layouts.universal',
     [
         'title' => 'Shop',
-        'heading_title' => 'Shop Package'
+        'heading_title' => 'Travels'
     ]
 )
 
@@ -15,12 +15,10 @@
 @section('content')
     <div id="content">
         <div class="container">
-            <p class="text-muted lead text-center">In our Ladies department we offer wide selection of the best products we have found and carefully selected worldwide. Pellentesque habitant morbi tristique senectus et netuss.</p>
-
             <div class="row products">
 
                 @foreach($transports as $transport)
-                    <div class="col-md-3 col-sm-4">
+                    <div class="col-md-4 col-sm-4">
                         <div class="product">
                             <div class="image">
                                 <a href="{{ route('shop.item', ['id' => $transport->id]) }}">
@@ -50,7 +48,7 @@
             </div>
             <!-- /.products -->
 
-            <div class="col-sm-12">
+            {{--  <div class="col-sm-12">
 
                 <div class="banner">
                     <a href="#">
@@ -82,7 +80,7 @@
                     </ul>
                 </div>
 
-            </div>
+            </div>  --}}
             <!-- /.col-sm-12 -->
 
         </div>
