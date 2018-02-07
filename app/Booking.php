@@ -9,6 +9,7 @@ class Booking extends Model
     protected $fillable = [
         'name',
         'email',
-        'message'
+        'message',
+        'date_inquired'
     ];
 }

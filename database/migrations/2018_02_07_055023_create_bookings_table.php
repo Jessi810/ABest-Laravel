@@ -18,7 +18,7 @@ class CreateBookingsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('message')->nullable();
-            $table->dateTime('date_booked');
+            $table->dateTime('date_inquired');
             $table->timestamps();
         });
     }
