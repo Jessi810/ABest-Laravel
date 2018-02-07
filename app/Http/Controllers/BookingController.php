@@ -6,10 +6,11 @@ use App\Booking;
 use App\Package;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use App\Http\Requests\BookingRequest;
 
 class BookingController extends Controller
 {
-    public function booking(Request $request, $id)
+    public function booking(BookingRequest $request, $id)
     {
         $package = Package::find($id);
 
