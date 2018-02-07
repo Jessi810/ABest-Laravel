@@ -55,31 +55,31 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="firstname">Firstname</label>
-                                    <input type="text" class="form-control" name="firstname" id="firstname">
+                                    <input type="text" class="form-control" name="firstname" id="firstname" value="{{ old('firstname') }}">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="lastname">Lastname</label>
-                                    <input type="text" class="form-control" name="lastname" id="lastname">
+                                    <input type="text" class="form-control" name="lastname" id="lastname" value="{{ old('lastname') }}">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="text" class="form-control" name="email" id="email">
+                                    <input type="text" class="form-control" name="email" id="email" value="{{ old('email') }}">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="subject">Subject</label>
-                                    <input type="text" class="form-control" name="subject" id="subject">
+                                    <input type="text" class="form-control" name="subject" id="subject" value="{{ old('subject') }}">
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="message">Message</label>
-                                    <textarea name="message" id="message" class="form-control"></textarea>
+                                    <textarea name="message" id="message" class="form-control">{{ old('message') }}</textarea>
                                 </div>
                             </div>
 

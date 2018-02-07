@@ -126,16 +126,16 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                            <input type="text" class="form-control" name="name" id="name" value="{{ old('name') }}" placeholder="Your name">
                                         </div>
                         
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="email" id="email" placeholder="Your email">
+                                            <input type="text" class="form-control" name="email" id="email" value="{{ old('email') }}" placeholder="Your email">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <textarea type="" class="form-control" rows="4" name="message" id="message" placeholder="Message"></textarea>
+                                            <textarea type="" class="form-control" rows="4" name="message" id="message" placeholder="Message">{{ old('message') }}</textarea>
                                         </div>
                                     </div>
                                 </div>
