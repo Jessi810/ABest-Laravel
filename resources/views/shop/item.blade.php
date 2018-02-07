@@ -117,7 +117,7 @@
                         </div>
                         <div class="col-md-6">
                             <h4>Book Now!</h4>
-                            <form action="{{ route('transport.store') }}" method="post" enctype="multipart/form-data">
+                            <form action="{{ route('shop.booking') }}" method="post">
                                 {{ csrf_field() }}
                                 
                                 <div class="row">
