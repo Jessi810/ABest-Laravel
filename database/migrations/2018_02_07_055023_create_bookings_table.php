@@ -15,6 +15,10 @@ class CreateBookingsTable extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->increments('id');
+
+            $table->integer('package_id')->unsigned()->index()->nullable();
+            $table->foreign('package_id')->references('id')->on('packages')->onDelete('set null');
+
             $table->string('name');
             $table->string('email');
             $table->string('message')->nullable();

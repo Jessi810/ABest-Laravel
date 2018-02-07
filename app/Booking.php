@@ -12,4 +12,9 @@ class Booking extends Model
         'message',
         'date_inquired'
     ];
+
+    public function package()
+    {
+        return $this->belongsTo(Package::class);
+    }
 }
