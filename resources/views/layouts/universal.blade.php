@@ -70,12 +70,24 @@
                                 </div>
 
                                 <div class="login">
-                                    @if (Auth::check())
-                                        
-                                    @else
+                                    @guest
                                         <a href="{{ route('login') }}"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
                                         <a href="{{ route('register') }}"><i class="fa fa-user"></i> <span class="hidden-xs text-uppercase">Sign up</span></a>
-                                    @endif
+                                    @else
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            <span class="hidden-xs text-uppercase">{{ Auth::user()->name }}</span>
+                                        </a>
+        
+                                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            <i class="fa fa-sign-out"></i>
+                                            <span class="hidden-xs text-uppercase">Logout</span>
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    @endguest
                                 </div>
 
                             </div>
