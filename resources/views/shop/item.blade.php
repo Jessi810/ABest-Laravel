@@ -150,8 +150,8 @@
                                     </div>
                                 </div>
                 
-                                <div class="form-group">
-                                    <input type="submit" class="btn" />
+                                <div class="col-sm-12 text-center">
+                                    <button type="submit" class="btn btn-template-main"><i class="fa fa-plane"></i> Book It</button>
                                 </div>
                             </form>
                         </div>
