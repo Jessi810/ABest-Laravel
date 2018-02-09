@@ -10,18 +10,44 @@
 @endsection
 
 @section('script')
-<script>
-    $('#navbar-contact').addClass('active');
-</script>
-
 <!-- gmaps -->
-
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-
 <script src="{{ asset('js/gmaps.js') }}"></script>
 <script src="{{ asset('js/gmaps.init.js') }}"></script>
 
-<!-- gmaps end -->
+<script>
+    $('#navbar-contact').addClass('active');
+
+    $(document).ready(function() {
+        $(document).on('click', '#submitButton', function() {
+            var form = $('#contactForm');
+
+            $.ajax({
+                url     : form.attr("action"),
+                method  : form.attr("method"),
+                data    : form.serialize(),
+                success : function(response) {
+                    console.log(response);
+                    $("#errorMessageBox").addClass("hidden");
+                    $("#contactForm").empty();
+                    $("#contactForm").append("<div class='alert alert-info'><strong>Thank you!</strong><br>Your request will be processed shortly. Check your email later for answer to your inquiry.</div>");
+                },
+                error   : function(response) {
+                    if (response.status === 422)
+                    {
+                        $("#errorMessageBox > ul").empty();
+                        $("#errorMessageBox").removeClass("hidden");
+
+                        var errors = response.responseJSON.errors;
+                        $.each(errors, function (key, value) {
+                            $("#errorMessageBox > ul").append("<li>" + value[0] + "</li>");
+                        });
+                    }
+                }
+            });
+        });
+    })
+</script>
 @endsection
 
 @section('content')
@@ -48,10 +74,14 @@
                         <h3>Contact form</h3>
                     </div>
 
-                    <form action="{{ route('contact.message') }}" method="POST">
+                    <form id="contactForm" action="{{ route('contact.message') }}" method="POST">
                         {{ csrf_field() }}
 
-                        @if ($errors->any())
+                        <div id="errorMessageBox" class="alert alert-danger hidden">
+                            <ul></ul>
+                        </div>
+
+                        {{--  @if ($errors->any())
                             <div class="alert alert-danger">
                                 <ul>
                                     @foreach ($errors->all() as $error)
@@ -59,7 +89,7 @@
                                     @endforeach
                                 </ul>
                             </div>
-                        @endif
+                        @endif  --}}
                         
                         <div class="row">
                             <div class="col-sm-6">
@@ -94,7 +124,7 @@
                             </div>
 
                             <div class="col-sm-12 text-center">
-                                <button type="submit" class="btn btn-template-main"><i class="fa fa-envelope-o"></i> Send message</button>
+                                <button type="button" id="submitButton" class="btn btn-template-main"><i class="fa fa-envelope-o"></i> Send message</button>
                             </div>
                         </div>
                         <!-- /.row -->
