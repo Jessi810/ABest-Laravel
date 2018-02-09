@@ -35,14 +35,6 @@
         <!-- Favicon and apple touch icons-->
         <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" sizes="128x128" />
 
-        <script>
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-        </script>
-
         @yield('head')
     </head>
 

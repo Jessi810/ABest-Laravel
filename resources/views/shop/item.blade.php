@@ -108,9 +108,9 @@
 
                     <div class="row" id="thumbs">
                         @foreach($transport->images as $image)
-                            <div class="col-xs-4">
-                                <a href="{{ asset($image->path.'/'.$image->filename) }}" class="thumb" style="width: auto; max-height: 120px; overflow: hidden;">
-                                    <img src="{{ asset($image->path.'/'.$image->filename) }}" alt="" class="img-responsive" style="width: 100%; height: 100%px;">
+                            <div class="col-xs-4" style="min-height: 120px; max-height: 120px; overflow: hidden;">
+                                <a href="{{ asset($image->path.'/'.$image->filename) }}" class="thumb">
+                                    <img src="{{ asset($image->path.'/'.$image->filename) }}" alt="" class="img-responsive" style="width: 100%; height: 100%;">
                                 </a>
                             </div>
                         @endforeach
