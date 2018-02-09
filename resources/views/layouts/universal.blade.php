@@ -272,14 +272,14 @@
                             <strong>ABest Transport and Tour Services Inc.</strong>
                             <br>240 Skyview Ranch Rd NE
                             <br>Calgary, AB T3N 0P4
-                            <br><strong>Contact No,</strong>
+                            <br><strong>Contact No</strong>
                             <br>+1 587 500 0888
                             <br><strong>Email</strong>
                             <br>info@abesttransport.com
                             <br>
                         </p>
 
-                        <a href="contact" class="btn btn-small btn-template-main">Go to contact page</a>
+                        <a href="{{ route('contact.index') }}" class="btn btn-small btn-template-main">Go to contact page</a>
 
                         <hr class="hidden-md hidden-lg hidden-sm">
 
