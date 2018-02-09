@@ -11,7 +11,37 @@
 
 @section('script')
 <script>
-    $('#navbar-package').addClass('active');
+    $(document).ready(function() {
+        $("#navbar-package").addClass("active");
+
+        $(document).on('click', '#submitButton', function() {
+            var form = $('#bookingForm');
+
+            $.ajax({
+                url     : form.attr("action"),
+                method  : form.attr("method"),
+                data    : form.serialize(),
+                success : function(response) {
+                    console.log(response);
+                    $("#errorMessageBox").addClass("hidden");
+                    $("#bookingForm").empty();
+                    $("#bookingForm").append("<div class='alert alert-info'><strong>Thank you!</strong><br>Your request will be processed shortly. Check your email later for additional details.</div>");
+                },
+                error   : function(response) {
+                    if (response.status === 422)
+                    {
+                        $("#errorMessageBox > ul").empty();
+                        $("#errorMessageBox").removeClass("hidden");
+
+                        var errors = response.responseJSON.errors;
+                        $.each(errors, function (key, value) {
+                            $("#errorMessageBox > ul").append("<li>" + value[0] + "</li>");
+                        });
+                    }
+                }
+            });
+        });
+    });
 </script>
 @endsection
 
@@ -68,7 +98,7 @@
 
                             <p class="text-center">
                                 {{--  <a href="{{ route('shop.book', ['id' => $transport->id]) }}" type="submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> Book Now!</a>  --}}
-                                <a href="javascript:void(0)" type="submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> Book Now!</a>
+                                {{--  <a href="{{ route('shop.item', ['id' => $transport->id]) }}#bookingHead" type="submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> Book Now!</a>  --}}
                                 {{--  <button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart-o"></i>
                                 </button>  --}}
                             </p>
@@ -120,18 +150,12 @@
                         </div>
                         <div class="col-md-6">
                             <h4>Book Now!</h4>
-                            <form action="{{ route('shop.booking', ['id' => $transport->id]) }}" method="post">
+                            <form id="bookingForm" action="{{ route('shop.booking', ['id' => $transport->id]) }}" method="post">
                                 {{ csrf_field() }}
 
-                                @if ($errors->any())
-                                    <div class="alert alert-danger">
-                                        <ul>
-                                            @foreach ($errors->all() as $error)
-                                                <li>{{ $error }}</li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-                                @endif
+                                <div id="errorMessageBox" class="alert alert-danger hidden">
+                                    <ul></ul>
+                                </div>
                                 
                                 <div class="row">
                                     <div class="col-md-6">
@@ -151,7 +175,7 @@
                                 </div>
                 
                                 <div class="col-sm-12 text-center">
-                                    <button type="submit" class="btn btn-template-main"><i class="fa fa-plane"></i> Book It</button>
+                                    <button type="button" id="submitButton" class="btn btn-template-main"><i class="fa fa-plane"></i> Book It</button>
                                 </div>
                             </form>
                         </div>
