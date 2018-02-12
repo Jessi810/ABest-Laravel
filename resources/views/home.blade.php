@@ -28,15 +28,12 @@
                             <div class="item">
                                 <div class="row">
                                     <div class="col-sm-5 right">
-                                        <p>
-                                            <img src="img/logo.png" alt="">
-                                        </p>
-                                        <h1>Multipurpose responsive theme</h1>
-                                        <p>Business. Corporate. Agency.
-                                            <br />Portfolio. Blog. E-commerce.</p>
+                                        <h1>Welcome</h1>
+                                        <p>Welcome to ABest transport 
+                                            <br />official website</p>
                                     </div>
                                     <div class="col-sm-7">
-                                        <img class="img-responsive" src="img/template-homepage.png" alt="">
+                                        <img class="img-responsive" src="img/abestlogo.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +41,7 @@
                                 <div class="row">
 
                                     <div class="col-sm-7 text-center">
-                                        <img class="img-responsive" src="img/template-mac.png" alt="">
+                                        <img class="img-responsive" src="img/transport/2/downtown3.jpg" alt="">
                                     </div>
 
                                     <div class="col-sm-5">
@@ -71,14 +68,14 @@
                                         </ul>
                                     </div>
                                     <div class="col-sm-7">
-                                        <img class="img-responsive" src="img/template-easy-customize.png" alt="">
+                                        <img class="img-responsive" src="img/transport/2/downtown4.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="row">
                                     <div class="col-sm-7">
-                                        <img class="img-responsive" src="img/template-easy-code.png" alt="">
+                                        <img class="img-responsive" src="img/transport/3/banff4.jpg" alt="">
                                     </div>
                                     <div class="col-sm-5">
                                         <h1>Easy to customize</h1>
@@ -110,7 +107,7 @@
                             </p>  --}}
                         </div>
                         <div class="col-md-6 text-center">
-                            <img src="img/template-easy-customize.png" alt="" class="img-responsive">
+                            <img src="img/transport/1/drumheller3.jpg" alt="" class="img-responsive">
                         </div>
                     </div>
                 </div>
@@ -120,7 +117,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 text-center">
-                            <img src="img/template-easy-code.png" alt="" class="img-responsive">
+                            <img src="img/transport/3/banff4.jpg" alt="" class="img-responsive">
                         </div>
                         <div class="col-md-6">
                             <h2 class="text-uppercase">Services like no other</h2>
@@ -152,7 +149,7 @@
                             </p>  --}}
                         </div>
                         <div class="col-md-6 text-center">
-                            <img src="img/template-easy-customize.png" alt="" class="img-responsive">
+                            <img src="img/transport/3/banff5.jpg" alt="" class="img-responsive">
                         </div>
                     </div>
                 </div>
