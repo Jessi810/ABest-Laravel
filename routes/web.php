@@ -14,7 +14,10 @@
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'HomeController@comingSoon')->name('home.soon');
+// Route::get('/', 'HomeController@comingSoon')->name('home.soon');
+Route::get('/', function() {
+    return view('coming-soon');
+})->name('home.soon');
 Route::get('contact', 'ContactController@index')->name('contact.index');
 Route::post('contact', 'ContactController@message')->name('contact.message');
 
