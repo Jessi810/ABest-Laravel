@@ -15,10 +15,10 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         $user = new User();
-        $user->name = 'Jessi';
+        $user->name = 'Super Admin';
         $user->email = 'admin@mail.com';
         $user->password = bcrypt('admina');
         $user->save();
-        $user->roles()->attach(Role::where('name', '=', 'Administrator')->first());
+        $user->roles()->attach(Role::where('name', '=', 'Super Admin')->first());
     }
 }
