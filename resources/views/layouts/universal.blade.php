@@ -94,7 +94,7 @@
                         <div class="container">
 
                             <div class="navbar-header">
-                                <a class="navbar-brand home" href="index.html">
+                                <a class="navbar-brand home" href="{{ route('home') }}">
                                     <img src="{{ asset('img/logo_text.png') }}" alt="ABest logo" class="hidden-xs hidden-sm">
                                     <img src="{{ asset('img/logo_text_small.png') }}" alt="ABest logo" class="visible-xs visible-sm"><span class="sr-only">ABest - Go to homepage</span>
                                 </a>
