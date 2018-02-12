@@ -13,8 +13,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $request->user()->authorizeRoles(['Super Admin']);
+
         $users = User::with('roles')->get();
 
         return view('admin.account.index', compact('users'));
@@ -25,8 +27,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
+        $request->user()->authorizeRoles(['Super Admin']);
+
         return view('admin.account.create');
     }
 
