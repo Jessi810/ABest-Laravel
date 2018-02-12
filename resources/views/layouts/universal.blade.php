@@ -95,8 +95,8 @@
 
                             <div class="navbar-header">
                                 <a class="navbar-brand home" href="index.html">
-                                    <img src="{{ asset('img/logo.png') }}" alt="Universal logo" class="hidden-xs hidden-sm">
-                                    <img src="{{ asset('img/logo-small.png') }}" alt="Universal logo" class="visible-xs visible-sm"><span class="sr-only">Universal - go to homepage</span>
+                                    <img src="{{ asset('img/logo_text.png') }}" alt="ABest logo" class="hidden-xs hidden-sm">
+                                    <img src="{{ asset('img/logo_text_small.png') }}" alt="ABest logo" class="visible-xs visible-sm"><span class="sr-only">ABest - Go to homepage</span>
                                 </a>
                                 <div class="navbar-buttons">
                                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -154,7 +154,7 @@
                             </div>
                             {{--  <div class="col-md-5">
                                 <ul class="breadcrumb">
-                                    <li><a href="index.html">Home</a>
+                                    <li><a href="login.blade.php">Home</a>
                                     </li>
                                     <li>Category full</li>
                                 </ul>
@@ -167,94 +167,22 @@
 
             @yield('content')
 
-            <!-- *** GET IT *** _________________________________________________________ -->
-            <div id="get-it">
-                <div class="container">
-                    <div class="col-md-8 col-sm-12">
-                        <h3>Do you want cool website like this one?</h3>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <a href="#" class="btn btn-template-transparent-primary">Buy this template now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- *** GET IT END *** -->
 
             <!-- *** FOOTER *** _________________________________________________________ -->
             <footer id="footer">
                 <div class="container">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <h4>About us</h4>
 
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
-                        <hr>
-
-                        <h4>Join our monthly newsletter</h4>
-
-                        <form>
-                            <div class="input-group">
-
-                                <input type="text" class="form-control">
-
-                                <span class="input-group-btn">
-
-                            <button class="btn btn-default" type="button"><i class="fa fa-send"></i></button>
-
-                        </span>
-
-                            </div>
-                            <!-- /input-group -->
-                        </form>
+                        <p>Welcome to Calgary, Alberta! Experience the genuine hospitality and excellent customer service of our friendly and expert drivers cum travel guides as you go around. We offer customized transport services like no other. As travelers ourselves, we wish to offer an optimum travel experience without spending much for tours and transportation to guarantee a hassle-free Canada travel experience. You are guaranteed with Uber transportation rates so there’s no need to worry about overpriced transportation fees. What’s more, you get the customized sightseeing opportunities and go to your chosen tourist destinations at your own pace with the help of our own drivers. “Our Travel, Your Choice.”</p>
+                       
 
                         <hr class="hidden-md hidden-lg hidden-sm">
 
                     </div>
                     <!-- /.col-md-3 -->
 
-                    <div class="col-md-3 col-sm-6">
-
-                        <h4>Blog</h4>
-
-                        <div class="blog-entries">
-                            <div class="item same-height-row clearfix">
-                                <div class="image same-height-always">
-                                    <a href="#">
-                                        <img class="img-responsive" src="{{ asset('img/detailsquare.jpg') }}" alt="">
-                                    </a>
-                                </div>
-                                <div class="name same-height-always">
-                                    <h5><a href="#">Blog post name</a></h5>
-                                </div>
-                            </div>
-
-                            <div class="item same-height-row clearfix">
-                                <div class="image same-height-always">
-                                    <a href="#">
-                                        <img class="img-responsive" src="{{ asset('img/detailsquare.jpg') }}" alt="">
-                                    </a>
-                                </div>
-                                <div class="name same-height-always">
-                                    <h5><a href="#">Blog post name</a></h5>
-                                </div>
-                            </div>
-
-                            <div class="item same-height-row clearfix">
-                                <div class="image same-height-always">
-                                    <a href="#">
-                                        <img class="img-responsive" src="{{ asset('img/detailsquare.jpg') }}" alt="">
-                                    </a>
-                                </div>
-                                <div class="name same-height-always">
-                                    <h5><a href="#">Very very long blog post name</a></h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr class="hidden-md hidden-lg">
-
-                    </div>
-                    <!-- /.col-md-3 -->
+                    
 
                     <div class="col-md-3 col-sm-6">
 
@@ -284,33 +212,33 @@
 
                         <div class="photostream">
                             <div>
-                                <a href="#">
-                                    <img src="{{ asset('img/detailsquare.jpg') }}" class="img-responsive" alt="#">
+                                <a href="{{ route('shop.item', ['id' => '3']) }}">
+                                    <img src="{{ asset('img/photostream/banff.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
-                                    <img src="{{ asset('img/detailsquare2.jpg') }}" class="img-responsive" alt="#">
+                                <a href="{{ route('shop.item', ['id' => '1']) }}">
+                                    <img src="{{ asset('img/photostream/drumheller3.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
-                                    <img src="{{ asset('img/detailsquare3.jpg') }}" class="img-responsive" alt="#">
+                                <a href="{{ route('shop.item', ['id' => '3']) }}">
+                                    <img src="{{ asset('img/photostream/banff3.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
-                                    <img src="{{ asset('img/detailsquare3.jpg') }}" class="img-responsive" alt="#">
+                                <a href="{{ route('shop.item', ['id' => '3']) }}">
+                                    <img src="{{ asset('img/photostream/banff4.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
-                                    <img src="{{ asset('img/detailsquare2.jpg') }}" class="img-responsive" alt="#">
+                                <a href="{{ route('shop.item', ['id' => '3']) }}">
+                                    <img src="{{ asset('img/photostream/banff5.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
-                                    <img src="{{ asset('img/detailsquare.jpg') }}" class="img-responsive" alt="#">
+                                <a href="{{ route('shop.item', ['id' => '1']) }}">
+                                    <img src="{{ asset('img/photostream//drumheller.jpg') }}" class="img-responsive" alt="#">
                                 </a>
                             </div>
                         </div>
