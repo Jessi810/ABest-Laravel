@@ -31,3 +31,7 @@ Route::get('shop', 'ShopController@index')->name('shop.index');
 Route::get('item/{id}', 'ShopController@item')->name('shop.item');
 Route::get('book/{id}', 'ShopController@book')->name('shop.book');
 Route::post('booking/{id}', 'BookingController@booking')->name('shop.booking');
+
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function () {
+    Route::get('dashboard', 'DashboardController@index');
+});
