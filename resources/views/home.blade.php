@@ -45,7 +45,7 @@
                                     </div>
 
                                     <div class="col-sm-5">
-                                        <h2>46 HTML pages full of features</h2>
+                                        <h2>What is ABest Transport?</h2>
                                         <ul class="list-style-none">
                                             <li>Sliders and carousels</li>
                                             <li>4 Header variations</li>
@@ -59,7 +59,7 @@
                             <div class="item">
                                 <div class="row">
                                     <div class="col-sm-5 right">
-                                        <h1>Design</h1>
+                                        <h1>Services Offered</h1>
                                         <ul class="list-style-none">
                                             <li>Clean and elegant design</li>
                                             <li>Full width and boxed mode</li>
@@ -78,10 +78,12 @@
                                         <img class="img-responsive" src="img/transport/3/banff4.jpg" alt="">
                                     </div>
                                     <div class="col-sm-5">
-                                        <h1>Easy to customize</h1>
+                                        <h1>Find us on</h1>
                                         <ul class="list-style-none">
-                                            <li>7 preprepared colour variations.</li>
-                                            <li>Easily to change fonts</li>
+                                            <li>ABest Transport and Tour Services Inc. </li>
+                                            <li>240 Skyview Ranch Rd NE </li>
+                                            <li>Calgary, AB T3N 0P4  </li>
+                                            <li>Canada </li>
                                         </ul>
                                     </div>
                                 </div>
