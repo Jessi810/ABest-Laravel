@@ -64,7 +64,6 @@
                                 <div class="login">
                                     @guest
                                         <a href="{{ route('login') }}"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
-                                        <a href="{{ route('register') }}"><i class="fa fa-user"></i> <span class="hidden-xs text-uppercase">Sign up</span></a>
                                     @else
                                         <a href="#">
                                             <i class="fa fa-user"></i>
