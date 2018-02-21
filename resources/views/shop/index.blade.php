@@ -35,7 +35,7 @@
                             <div class="text">
                                 <h3><a href="{{ route('shop.item', ['id' => $transport->id]) }}">{{ $transport->name }}</a></h3>
                                 <p class="price">
-                                    CA$ {{ $transport->packages->min('price_1') }}
+                                   Starting at CA$ {{ $transport->packages->min('price_1') }}
                                 </p>
                                 <p class="buttons">
                                     <a href="{{ route('shop.item', ['id' => $transport->id]) }}" class="btn btn-default">View detail</a>
