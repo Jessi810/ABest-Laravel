@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use App\ContactForm;
 use App\Http\Requests\ContactFormRequest;
 
+use App\Mail\ContactEmail;
+use Mail;
+
 class ContactController extends Controller
 {
     public function index()
@@ -23,6 +26,8 @@ class ContactController extends Controller
         $contact->subject = $request->get('subject');
         $contact->message = $request->get('message');
         $contact->save();
+
+        Mail::to('info@abesttransport.com')->send(new ContactEmail($contact));
 
         return 0;
     }
