@@ -35,7 +35,7 @@ class BookingEmail extends Mailable
     {
         return $this
             ->view('emails.booking.inquire')
-            ->to(config('mail.from.address'))
+            ->to('info@abesttransport.com')
             ->subject('New Booking!');
     }
 }

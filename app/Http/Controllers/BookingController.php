@@ -24,7 +24,7 @@ class BookingController extends Controller
         $book->date_inquired = Carbon::now();
         $book->package()->associate($package)->save();
 
-        Mail::to('jessisibayan@gmail.com')->send(new BookingEmail($book));
+        Mail::to('info@abesttransport.com')->send(new BookingEmail($book));
 
         return 0;
     }
