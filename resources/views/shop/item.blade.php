@@ -94,7 +94,7 @@
 
                             </div>  --}}    
 
-                            <p class="price">${{ $transport->packages->min('price_1') }} - ${{ $transport->packages->max('price_2') }}</p>
+                            <p class="price">Starting at ${{ $transport->packages->min('price_1') }}</p>
 
                             <p class="text-center">
                                 {{--  <a href="{{ route('shop.book', ['id' => $transport->id]) }}" type="submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> Book Now!</a>  --}}
@@ -119,35 +119,6 @@
 
             </div>
 
-
-            <div class="box" id="details">
-                <p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Product details</h4>
-                            <table class="table table-bordered">
-                                <thead>
-                                    <th></th>
-                                    @foreach($transport->packages as $package)
-                                        <th>{{ $package->size }} maximum person</th>
-                                    @endforeach
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>1-way</th>
-                                        @foreach($transport->packages as $package)
-                                            <td>${{ $package->price_1 }}</td>
-                                        @endforeach
-                                    </tr>
-                                    <tr>
-                                        <th>2-way</th>
-                                        @foreach($transport->packages as $package)
-                                            <td>${{ $package->price_2 }}</td>
-                                        @endforeach
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                         <div class="col-md-6">
                             <h4>Book Now!</h4>
                             <form id="bookingForm" action="{{ route('shop.booking', ['id' => $transport->id]) }}" method="post">
