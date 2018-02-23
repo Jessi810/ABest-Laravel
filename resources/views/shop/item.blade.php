@@ -94,7 +94,7 @@
 
                             </div>  --}}    
 
-                            <p class="price">Starting at ${{ $transport->packages->min('price_1') }}</p>
+                            <p class="price">Starting at CA${{ $transport->packages->min('price_1') }}</p>
 
                             <p class="text-center">
                                 {{--  <a href="{{ route('shop.book', ['id' => $transport->id]) }}" type="submit" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i> Book Now!</a>  --}}
