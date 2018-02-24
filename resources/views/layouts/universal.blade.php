@@ -114,9 +114,9 @@
                                     <li id="navbar-package" class="">
                                         <a href="{{ route('shop.index') }}">Packages</a>
                                     </li>
-                                    <li id="navbar-reservation" class="">
+                                    <!--<li id="navbar-reservation" class="">
                                         <a href="#">Reservation</a>
-                                    </li>
+                                    </li>-->
                                     <li id="navbar-contact" class="">
                                         <a href="{{ route('contact.index') }}">Contact Us</a>
                                     </li>
