@@ -173,7 +173,7 @@
                     <div class="col-md-6 col-sm-6">
                         <h4>About us</h4>
 
-                        <p>Welcome to Calgary, Alberta! Experience the genuine hospitality and excellent customer service of our friendly and expert drivers cum travel guides as you go around. We offer customized transport services like no other. As travelers ourselves, we wish to offer an optimum travel experience without spending much for tours and transportation to guarantee a hassle-free Canadian Rocky Mountain Travel experience. You are guaranteed with Ride Share transportation rates so there’s no need to worry about overpriced transportation fees. What’s more, you get the customized sightseeing opportunities and go to your chosen tourist destinations at your own pace with the help of our own drivers. “Our Travel, Your Choice.”</p>
+                        <p>Welcome to Calgary, Alberta! Experience the genuine hospitality and excellent customer service of our friendly and expert drivers cum travel guides as you go around. We offer customized transport services like no other. As travelers ourselves, we wish to offer an optimum travel experience without spending much for tours and transportation to guarantee a hassle-free Canadian Rocky Mountain Travel experience. You are guaranteed with Reasonable transportation rates so there’s no need to worry about overpriced transportation fees. What’s more, you get the customized sightseeing opportunities and go to your chosen tourist destinations at your own pace with the help of our own drivers. “Our Travel, Your Choice.”</p>
                        
 
                         <hr class="hidden-md hidden-lg hidden-sm">

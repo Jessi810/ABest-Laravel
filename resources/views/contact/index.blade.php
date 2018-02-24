@@ -155,9 +155,12 @@
                     <p>
                         <strong>+1 587 500 0888</strong>
                     </p>
-                    <p>
-                        <strong>1855-goabest</strong>
-                    </p>
+                    <h4>
+                        <strong>TOLL FREE: </strong>
+                    </h4>
+                    <h4>
+                        <strong>1-855-GoABest</strong>
+                    </h4>
 
 
 
@@ -180,6 +183,6 @@
 </div>
 <!-- /#content -->
 
-<div id="map">
-</div>
+<!--<div id="map">
+</div>-->
 @endsection
