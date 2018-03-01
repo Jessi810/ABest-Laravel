@@ -33,7 +33,7 @@
                                             <br />official website</p>
                                     </div>
                                     <div class="col-sm-7">
-                                        <img class="img-responsive" src="img/abestlogo.png" alt="">
+                                        <img class="img-responsive" src="img/abest_logo.png" alt="">
                                     </div>
                                 </div>
                             </div>

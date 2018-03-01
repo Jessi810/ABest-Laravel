@@ -94,13 +94,13 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="firstname">Firstname</label>
+                                    <label for="firstname">First Name</label>
                                     <input type="text" class="form-control" name="firstname" id="firstname" value="{{ old('firstname') }}">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="lastname">Lastname</label>
+                                    <label for="lastname">Last Name</label>
                                     <input type="text" class="form-control" name="lastname" id="lastname" value="{{ old('lastname') }}">
                                 </div>
                             </div>
